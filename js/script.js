@@ -1,6 +1,7 @@
 // init AOS
 AOS.init();
 
+// test
 $(document).ready(function() {
     // courses caroussel
     $('.courses-category-slider').slick({
