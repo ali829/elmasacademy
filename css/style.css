@@ -27,10 +27,9 @@
 }
 
 body {
-    background-color: red;
+    background-color: var(--white-);
     margin: 0;
     font-family: 'Cairo';
-    
 }
 
 a {
