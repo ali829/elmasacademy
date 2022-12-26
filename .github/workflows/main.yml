@@ -12,8 +12,8 @@ jobs:
       - name: Upload from public_html via FTP
         uses: airvzxf/ftp-deployment-action@latest
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          user: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }} 
+          server: ftp.mahalkoom.com
+          user: elmasAcademy@elmasacademy.com
+          password: W=WcU0uxrwMM 
           local_dir: "/public_html/elmasacademy"
           delete: "false"
