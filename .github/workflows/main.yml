@@ -13,6 +13,4 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local_dir: "/home2/mahalkoo/"
-          remote_dir: "public_html/elmasacademy"
           delete: "false"
