@@ -15,5 +15,5 @@ jobs:
           server: ftp.mahalkoom.com
           user: elmasAcademy@elmasacademy.com
           password: W=WcU0uxrwMM 
-          local_dir: "./public_html/elmasacademy"
+          local_dir: "/home2/mahalkoo/public_html/elmasacademy"
           delete: "false"
