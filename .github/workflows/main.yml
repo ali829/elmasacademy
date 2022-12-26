@@ -10,7 +10,7 @@ jobs:
         uses: airvzxf/ftp-deployment-action@latest
         with:
           server: 'ftp.mahalkoom.com'
-          user: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          user: 'elmasAcademy@elmasacademy.com'
+          password: 'W=WcU0uxrwMM'
           local_dir: "./public_html/elmasacademy"
           delete: "false"
