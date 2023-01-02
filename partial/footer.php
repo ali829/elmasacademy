@@ -24,9 +24,9 @@
 <footer>
     <div class="footer-section-container">
         <div class="footer-contact-us">
-            <a href="tel:+6494461709">+212 6 63 20 00 90</a>
-            <a href="tel:+6494461709">+212 5 30 14 78 31</a>
-            <a href="mailto:xyz@abc.com">formadevma@gmail.com</a>
+            <a href="tel:+212663200090">+212 6 63 20 00 90</a>
+            <a href="tel:+212530147831">+212 5 30 14 78 31</a>
+            <a href="mailto:">formadevma@gmail.com</a>
         </div>
         <div class="footer-newsletter-form-container">
             <h3>النشرة البريدية</h3>
@@ -38,9 +38,9 @@
         </div>
         <div class="footer-site-content">
             <h3>النشرة البريدية</h3>
-            <a href="#">الرئيسية</a>
-            <a href="#">جميع الدورات</a>
-            <a href="#">إتصل بنا</a>
+            <a href="index.php">الرئيسية</a>
+            <a href="courses.php">جميع الدورات</a>
+            <a href="contact-us.php">إتصل بنا</a>
         </div>
     </div>
     <div class="copywrite-footer">

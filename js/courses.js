@@ -14,7 +14,8 @@ let courses = [
         },
         // 0 means soon & 1 means new
         status: 1,
-        category: 'marketing-digitale'
+        category: 'marketing-digitale',
+        type: "formation"
     },
     {
         title: "  دورة ريادة الأعمال و القيادة  -  Formation leadershiping",
@@ -30,7 +31,8 @@ let courses = [
         },
         // 0 means soon & 1 means new
         status: 0,
-        category: 'business-management'
+        category: 'business-management',
+        type: "formation"
     },
     {
         title: "دورة الغرافيك ديزاين  -  Graphic Design",
@@ -46,7 +48,8 @@ let courses = [
         },
         // 0 means soon & 1 means new
         status: 1,
-        category: 'graphic-design'
+        category: 'graphic-design',
+        type: "formation"
     },
     {
         title: "دورة الموشن غرافيك و الأنيميشن - Animation & motion graphic ",
@@ -62,7 +65,8 @@ let courses = [
         },
         // 0 means soon & 1 means new
         status: 1,
-        category: 'graphic-design'
+        category: 'graphic-design',
+        type: "formation"
     },
     {
         title: "  دورة التصوير و المونتاج الشاملة - Photo & video et montage ",
@@ -78,7 +82,8 @@ let courses = [
         },
         // 0 means soon & 1 means new
         status: 1,
-        category: 'photo-video-montage'
+        category: 'photo-video-montage',
+        type: "formation"
     },
     {
         title: "  دورة تصميم المواقع و تطويرها - Web Design & development ",
@@ -94,7 +99,76 @@ let courses = [
         },
         // 0 means soon & 1 means new
         status: 0,
-        category: 'web-dev'
+        category: 'web-dev',
+        type: "formation"
+    },
+    {
+        title: "برمجة الروبوتات - robotic",
+        price: "---",
+        studentsNumber: 30,
+        totalHours: 40,
+        topics: 20,
+        image_url: "assets/photos/wlidatech/Robotict---Sub-Thumb.png",
+        chapters: ["مقدمة حول الدورة", "التعريف بدور البرنامج واستعمالاته وتخصصاته", "شرح واجهة البرنامج والأدوات تمرين / اختبار", "تصميم بوستر سوشل ميديا"],
+        teacher: {
+            fullname: "احمد احمد",
+            descreption: "احمد مدرب خبير بمجال تصميم الغرافيك حاصل على دبلوم من مدرسة الفنون الجميلة قام بتصميم أزيد من 320 تصميم و 20 مشروع"
+        },
+        // 0 means soon & 1 means new
+        status: 1,
+        category: 'robotic',
+        type: "wlidatech"
+    },
+    {
+        title: "التصوير و المونتاج  -  photo video/ Montage",
+        price: "---",
+        studentsNumber: 30,
+        totalHours: 40,
+        topics: 20,
+        image_url: "assets/photos/wlidatech/Photo-montage---Sub-Thumb.png",
+        chapters: ["مقدمة حول الدورة", "التعريف بدور البرنامج واستعمالاته وتخصصاته", "شرح واجهة البرنامج والأدوات تمرين / اختبار", "تصميم بوستر سوشل ميديا"],
+        teacher: {
+            fullname: "احمد احمد",
+            descreption: "احمد مدرب خبير بمجال تصميم الغرافيك حاصل على دبلوم من مدرسة الفنون الجميلة قام بتصميم أزيد من 320 تصميم و 20 مشروع"
+        },
+        // 0 means soon & 1 means new
+        status: 1,
+        category: 'photo_video_montage',
+        type: "wlidatech"
+    },
+    {
+        title: "الإعلاميات  -  Informatique",
+        price: "---",
+        studentsNumber: 30,
+        totalHours: 40,
+        topics: 20,
+        image_url: "assets/photos/wlidatech/informatique---Sub-Thumb.png",
+        chapters: ["مقدمة حول الدورة", "التعريف بدور البرنامج واستعمالاته وتخصصاته", "شرح واجهة البرنامج والأدوات تمرين / اختبار", "تصميم بوستر سوشل ميديا"],
+        teacher: {
+            fullname: "احمد احمد",
+            descreption: "احمد مدرب خبير بمجال تصميم الغرافيك حاصل على دبلوم من مدرسة الفنون الجميلة قام بتصميم أزيد من 320 تصميم و 20 مشروع"
+        },
+        // 0 means soon & 1 means new
+        status: 1,
+        category: 'informatiques',
+        type: "wlidatech"
+    },
+    {
+        title: "التصميم الجرافيكي - graphic design",
+        price: "---",
+        studentsNumber: 30,
+        totalHours: 40,
+        topics: 20,
+        image_url: "assets/photos/wlidatech/Graphic-design---Sub-Thumb.png",
+        chapters: ["مقدمة حول الدورة", "التعريف بدور البرنامج واستعمالاته وتخصصاته", "شرح واجهة البرنامج والأدوات تمرين / اختبار", "تصميم بوستر سوشل ميديا"],
+        teacher: {
+            fullname: "احمد احمد",
+            descreption: "احمد مدرب خبير بمجال تصميم الغرافيك حاصل على دبلوم من مدرسة الفنون الجميلة قام بتصميم أزيد من 320 تصميم و 20 مشروع"
+        },
+        // 0 means soon & 1 means new
+        status: 1,
+        category: 'graphic_design',
+        type: "wlidatech"
     },
 ]
 
@@ -103,12 +177,17 @@ let courses = [
 
 
 // settin up courses
-buildCoursesSection(courses)
+function checkCourseType(type) {
+    return courses.filter(cours => cours.type === type);
+ }
 
-function buildCoursesSection(data) {
+
+ buildCoursesSection()
+function buildCoursesSection() {
     var coursesContainer = document.querySelector('.courses');
-    for (let index = 0; index < data.length; index++) {
-        const element = data[index];
+    var filtredData = document.location.pathname === '/elmasacademy/wlidatech.php' ? checkCourseType('wlidatech') : checkCourseType('formation');
+    for (let index = 0; index < filtredData.length; index++) {
+        const element = filtredData[index];
         var courseItem = `
         <div  class="${element.category} course-item ${(element.status == 1 ) ? '' : 'comming-soon'}">
         <img src="${element.image_url}" alt="" srcset="" width="100%" height="40%">
@@ -141,14 +220,17 @@ function buildCoursesSection(data) {
             </div>
         </div>
         <div class="course-cta">
-            <button class="course-cta-subsription">${(element.status == 1 ) ? 'إشترك بالدورة' : 'حجز'}</button>
-            <button class="course-cta-more-details">تفاصيل</button>
+            <button class="course-cta-subsription" data-course-title="${element.title}">${(element.status == 1 ) ? 'إشترك بالدورة' : 'حجز'}</button>
+            <button class="course-cta-more-details" data-course-title="${element.title}">تفاصيل</button>
         </div>
     </div>
         `;
         coursesContainer.innerHTML += courseItem;
     }
 }
+
+
+
 
 function singleCourseDetailBuild(singleCourse) {
     document.querySelector('.single-course-title').innerHTML = singleCourse.title;
@@ -167,10 +249,9 @@ function singleCourseDetailBuild(singleCourse) {
     }
 }
 
-function subscriptionBuild(singleCourse, index) {
+function subscriptionBuild(singleCourse) {
     document.querySelector('.course-subscription-top-bar-title').innerHTML = singleCourse.title;
     document.querySelector('.course-subscription-top-bar-thumbnail-img').setAttribute('src', singleCourse.image_url);
-    document.querySelector('.form-control').value = index;
 }
 
 
@@ -179,9 +260,10 @@ var btnCourseDeatils = document.querySelectorAll('.course-cta-more-details')
 var popupCourseDeatils = document.querySelector('.course-detail-popup-container')
 btnCourseDeatils.forEach((item, index) => {
     item.addEventListener("click", () => {
+        var currentCourseTitle = item.getAttribute('data-course-title')
         popupCourseDeatils.classList.add('show')
-        singleCourseDetailBuild(courses[index])
-        subscriptionBuild(courses[index], index)
+        singleCourseDetailBuild(courses.filter(course => course.title === currentCourseTitle)[0])
+        subscriptionBuild(courses.filter(course => course.title === currentCourseTitle)[0])
     })
 })
 popupCourseDeatils.addEventListener('mouseup', (e) => {
@@ -196,8 +278,9 @@ var popupSubscription = document.querySelector('.course-subscription-popup-conta
 var btnSubscription2 = document.querySelector('.single-course-subscribe-btn')
 btnSubscription.forEach((item, index) => {
     item.addEventListener("click", () => {
+        var currentCourseTitle = item.getAttribute('data-course-title')
         popupSubscription.classList.add('show')
-        subscriptionBuild(courses[index], index)
+        subscriptionBuild(courses.filter(course => course.title === currentCourseTitle)[0])
     })
 })
 btnSubscription2.addEventListener('click', () => {

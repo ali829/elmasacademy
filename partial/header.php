@@ -62,7 +62,7 @@ header("Expires: ".gmdate("D, d M Y H:i:s",time()+(-1*60))." GMT");
             <a href="https://www.linkedin.com/company/elmas-academy/" target="_blank">
                 <li><i class="fi fi-brands-linkedin"></i></li>
             </a>
-            <a href="https://www.facebook.com/people/Elmas-Academy/100088891239010/s" target="_blank">
+            <a href="https://www.facebook.com/people/Elmas-Academy/100088891239010/" target="_blank">
                 <li><i class="fi fi-brands-facebook"></i></li>
             </a>
             <a href="https://www.instagram.com/elmas.academy/" target="_blank">

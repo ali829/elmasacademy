@@ -236,7 +236,9 @@
     </div>
     <div class="wlidatech-text" data-aos="fade-up">
         <img src="assets/photos/wlidatech/Wlidatech-slider-2-2.png" alt="">
-        <button>إشترك الآن</button>
+        <a href="wlidatech.php">
+            <button>إشترك الآن</button>
+        </a>
     </div>
     <div class="wlidatech-canva" data-aos="fade-right">
     <img src="assets/photos/wlidatech/WlidatTech-slider-1-1.png" alt="">
