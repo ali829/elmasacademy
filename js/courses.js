@@ -185,7 +185,7 @@ function checkCourseType(type) {
  buildCoursesSection()
 function buildCoursesSection() {
     var coursesContainer = document.querySelector('.courses');
-    var filtredData = document.location.pathname === '/elmasacademy/wlidatech.php' ? checkCourseType('wlidatech') : checkCourseType('formation');
+    var filtredData = document.location.pathname === '/wlidatech.php' ? checkCourseType('wlidatech') : checkCourseType('formation');
     for (let index = 0; index < filtredData.length; index++) {
         const element = filtredData[index];
         var courseItem = `
